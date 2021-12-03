@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity"
+    tools:layout_editor_absoluteX="55dp"
+    tools:layout_editor_absoluteY="7dp">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="80dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="225dp"
+        android:text="Song Title:"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterText"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="414dp"
+        android:layout_height="69dp"
+        android:background="@color/purple_200"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/playlistText"
+            android:layout_width="372dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SONG PLAYLIST"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="48sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="414dp"
+        android:layout_height="62dp"
+        android:background="@color/teal_200"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:text="Add" />
+
+        <Button
+            android:id="@+id/playlistButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:text="Playlist" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/enterText"
+        android:layout_width="312dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="174dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="179dp"
+        android:layout_marginBottom="519dp"
+        android:text="Please enter a song you would like to add to your playlist"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        app:layout_constraintVertical_bias="0.365" />
+
+    <EditText
+        android:id="@+id/editTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="359dp"
+        android:ems="10"
+        android:hint="Song Title"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleText" />
+
+    <TextView
+        android:id="@+id/artistText"
+        android:layout_width="55dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="225dp"
+        android:layout_marginBottom="1dp"
+        android:text="Artist:"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/editArtist"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTitle" />
+
+    <EditText
+        android:id="@+id/editArtist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="99dp"
+        android:ems="10"
+        android:hint="Artist"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/artistText" />
+
+    <TextView
+        android:id="@+id/albumText"
+        android:layout_width="72dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="225dp"
+        android:text="Album:"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/editAlbum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editArtist" />
+
+    <EditText
+        android:id="@+id/editAlbum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="161dp"
+        android:ems="10"
+        android:hint="Album"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/albumText" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="157dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginEnd="166dp"
+        android:layout_marginBottom="47dp"
+        android:text="Save"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editAlbum" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
